@@ -1,0 +1,1 @@
+### [DEMO] APP deployments on the GKE with FluxCD
