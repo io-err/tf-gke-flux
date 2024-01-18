@@ -30,7 +30,6 @@ variable "GOOGLE_REGION" {
 variable "GOOGLE_PROJECT" {
   type        = string
   description = "Project name for cluster deployment"
-
 }
 
 variable "algorithm" {
@@ -47,27 +46,32 @@ variable "ecdsa_curve" {
 
 variable "GITHUB_OWNER" {
   type = string
+  description = "Flux repo owner github username"
 }
 
 variable "GITHUB_TOKEN" {
   type = string
+  description = "Personale token of github owner (used for API calls)"
 }
 
 variable "FLUX_GITHUB_REPO" {
   type = string
   default = "flux-gitops"
+  description = "Name of flux sync repo"
 }
 
 variable "REPO_VISIBILITY" {
   type = string
   default = "private"
+  description = "Visibility of flux sync repo"
 }
 
 variable "DEPLOY_KEY_TITLE" {
     type = string
+    description = "title for key that will be uploaded to github"
 }
-
 
 variable "KUBECONFIG_PATH" {
   type = string
+  description = "path to kubeconfig"
 }
